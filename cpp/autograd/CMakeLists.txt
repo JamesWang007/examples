@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(regression)
+project(autograd)
 set(CMAKE_CXX_STANDARD 14)
 
 find_package(Torch REQUIRED)
 
-add_executable(${PROJECT_NAME} "regression.cpp")
+add_executable(${PROJECT_NAME} "autograd.cpp")
 target_link_libraries(${PROJECT_NAME} "${TORCH_LIBRARIES}")
 
 # The following code block is suggested to be used on Windows.
